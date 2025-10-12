@@ -20,15 +20,15 @@ Used in Sepia-Brown Theme and Black Theme.
 
 <h1>Sepia and Brown</h1>
 
-<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup/main/Vault%20Images/SepiaDashboard.png" width="50%"/>
-<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup/main/Vault%20Images/SepiaDashboardGif.gif" width="50%"/>
-<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup/main/Vault%20Images/SepiaDailyNote.png" width="50%"/>
+<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/SepiaDashboard.png" width="50%"/>
+<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/SepiaDashboardGif.gif" width="50%"/>
+<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/SepiaDailyNote.png" width="50%"/>
 
 <h1>Black and White</h1>
 
-<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup/main/Vault%20Images/BlackDashboard.png" width="50%"/>
-<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup/main/Vault%20Images/BlackDashboardGif.gif" width="50%"/>
-<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup/main/Vault%20Images/BlackDailyNote.png" width="50%"/>
+<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/BlackDashboard.png" width="50%"/>
+<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/BlackDashboardGif.gif" width="50%"/>
+<img src="https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/BlackDailyNote.png" width="50%"/>
 
 
 # Plugins I Use.
