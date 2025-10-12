@@ -1,0 +1,171 @@
+/* Daily Note Structure Only */
+
+/* Estilos para títulos diarios */
+.daily :is(h1, .HyperMD-header.HyperMD-header-1) {
+  text-align: center;
+  font-size: 60px;
+  padding: 0 !important;
+}
+
+.daily :is(h2, .HyperMD-header.HyperMD-header-2) {
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  padding: 0 !important;
+}
+
+.daily :is(h3, .HyperMD-header.HyperMD-header-3) {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 0;
+}
+
+.daily :is(h4, .HyperMD-header.HyperMD-header-4) {
+  font-weight: 900;
+  margin-bottom: 0;
+  padding-top: 0;
+  font-size: 20px;
+  width: fit-content;
+  padding-right: 6px;
+  border-radius: 8px;
+  word-wrap: normal;
+}
+
+/* HR degradado */
+.markdown-preview-view hr,
+.markdown-source-view.mod-cm6 hr {
+  border: none;
+  height: 1px;
+  margin: 2rem 0;
+  opacity: 0.5;
+}
+
+/* No mostrar inline titles en no-inline */
+.no-inline .inline-title {
+  display: none !important;
+}
+
+
+
+/* HR visible, color-agnóstico (usa el color heredado) */
+.markdown-preview-view hr,
+.markdown-source-view.mod-cm6 hr {
+  border: none;
+  height: 1px;
+  margin: 2rem 0;
+  background: linear-gradient(to right, transparent, currentColor, transparent);
+  opacity: 0.25; /* ajusta la intensidad sin fijar color */
+}
+
+
+/* ==============================================================================  
+   ✦ Daily Note Themes — Purple Only ✦ End.
+   ============================================================================== */
+
+
+/* ==============================================================================  
+   ✦ Journals ✦
+   ============================================================================== */
+
+
+body {
+  --glow-shadow-1: 0 0 2px #FFFFFF, 0 0 6px #FFFFFF, 0 0 10px #FFFFFF;
+  --glow-shadow-2: 0 0 3px #FFFFFF, 0 0 7px #FFFFFF;
+  --glow-shadow-3: 0 0 3px #FFFFFF;
+  --glow-shadow-4: 0 0 12px #FFFFFF;
+  --glow-header: 0 0 4px #FFFFFF;
+  --glow-arrow: 0 0 4px #FFFFFF, 0 0 8px #FFFFFF;
+  --glow-box: 0 0 5px #FFFFFF;
+  --glow-box-internal: 0 0 4px #FFFFFF, 0 0 8px #FFFFFF;
+  --glow-bg-05: rgba(255, 255, 255, 0.05);
+  --glow-bg-08: rgba(255, 255, 255, 0.08);
+  --glow-border: rgba(255, 255, 255, 0.3);
+}
+
+
+/* 🗓️ Calendar days: hover con glow dinámico */
+.calendar-grid[data-v-063a3437] > *:hover {
+  transform: scale(1.1);
+  background-color: var(--glow-bg-05);
+  color: #fff !important;
+  text-shadow: var(--glow-shadow-1);
+  border-radius: 8px;
+  box-shadow: 0 6px 20px var(--glow-bg-05);
+  transition: all 0.2s cubic-bezier(0.25, 1.5, 0.5, 1.25);
+}
+
+/* 📍 Hoy: rebote y glow dinámico */
+.calendar[data-v-063a3437] [data-today]:hover {
+  animation: bounce-today-small 0.6s ease;
+  background-color: var(--glow-bg-08);
+  color: #fff !important;
+  text-shadow: var(--glow-shadow-2);
+  border-radius: 10px;
+}
+
+/* ✅ Día seleccionado */
+.calendar[data-v-063a3437] [data-selected]:hover {
+  transform: scale(1.15);
+  background-color: var(--glow-bg-05);
+  border: 2px dashed var(--glow-border);
+  color: #fff !important;
+  box-shadow: var(--glow-shadow-4);
+  transition: all 0.25s ease-in-out;
+}
+
+/* 📅 Header calendario */
+.calendar-header[data-v-063a3437] > *:hover {
+  animation: pulse-header-small 0.5s ease forwards;
+  color: #fff !important;
+}
+
+/* 🔘 Flechas (prev/next) */
+button[data-v-ff188d28]:hover {
+  transform: scale(1.1);
+  color: #fff !important;
+  text-shadow: var(--glow-arrow);
+  transition: transform 0.2s ease-in-out, color 0.2s;
+}
+
+/* ☁️ Icon buttons */
+.icon-button[data-v-3dd8502b]:hover {
+  animation: icon-bounce-small 0.4s ease-in-out;
+  background-color: var(--glow-bg-05);
+}
+
+/* 🎯 Bloques (día, mes, año) */
+.nav-block[data-v-3fb7392e]:hover,
+.nav-block-relative[data-v-3fb7392e]:hover {
+  transform: scale(1.05);
+  transition: all 0.25s ease;
+  color: #fff !important;
+}
+
+/* 🎯 Texto dentro del bloque */
+.nav-block[data-v-3fb7392e]:hover * {
+  transition: color 0.3s ease;
+}
+
+/* 🪩 Keyframes ajustados */
+@keyframes bounce-today-small {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.15); }
+  60%  { transform: scale(0.95); }
+  100% { transform: scale(1.05); }
+}
+
+@keyframes pulse-header-small {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1.03); }
+}
+
+@keyframes icon-bounce-small {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
+/* ==============================================================================  
+   ✦ Journals - End ✦
+   ============================================================================== */

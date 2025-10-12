@@ -1,0 +1,58 @@
+/* === Dark Mode (Pure Black + White Glow) === */
+body.theme-dark .mb-button.sepia-glow > button {
+  background: linear-gradient(135deg, #000000 0%, #111111 100%) !important;
+  color: #FFFFFF !important;
+  font-family: 'Georgia', serif !important;
+  font-weight: 500;
+  font-size: 0.92rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  padding: 14px 26px;
+  margin: 0.5rem 0;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  transition: opacity 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+body.theme-dark .mb-button.sepia-glow > button:hover {
+  transform: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Horizontal button bar */
+.sepia-button-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.sepia-button-row .mb-button {
+  margin: 0 !important;
+}
+
+/* Centered in the multi-column callout */
+.callout[data-callout="multi-column"] .callout-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  padding: 0.5rem 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Centrado h2 con glow blanco */
+.markdown-preview-view.centerh2 h2,
+.markdown-source-view.mod-cm6.centerh2 h2 {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5),
+               0 0 12px rgba(255, 255, 255, 0.3);
+}

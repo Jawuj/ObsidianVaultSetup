@@ -1,0 +1,77 @@
+/* === TABLAS estilo blanco y negro === */
+
+/* Tabla general */
+body.theme-dark .markdown-preview-view table,
+body.theme-dark .cm-preview table,
+body.theme-dark .markdown-source-view.mod-cm6 table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.95rem;
+  margin: 1.2em 0;
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%) !important; /* más negro */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Encabezados */
+body.theme-dark .markdown-preview-view th,
+body.theme-dark .cm-preview th,
+body.theme-dark .markdown-source-view.mod-cm6 th {
+  background: transparent !important;
+  color: #ffffff;
+  padding: 0.6em 0.8em;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.9),
+    0 0 14px rgba(255, 255, 255, 0.7);
+}
+
+/* Columna 2 resaltada */
+body.theme-dark .markdown-preview-view td:nth-child(2),
+body.theme-dark .cm-preview td:nth-child(2),
+body.theme-dark .markdown-source-view.mod-cm6 td:nth-child(2) {
+  color: #ffffff; /* neón blanco */
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Celdas */
+body.theme-dark .markdown-preview-view td,
+body.theme-dark .cm-preview td,
+body.theme-dark .markdown-source-view.mod-cm6 td {
+  padding: 0.55em 0.8em;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  background: transparent !important;
+}
+
+/* Filas alternas */
+body.theme-dark .markdown-preview-view tr:nth-child(even),
+body.theme-dark .cm-preview tr:nth-child(even),
+body.theme-dark .markdown-source-view.mod-cm6 tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Bordes suaves globales */
+body.theme-dark .markdown-preview-view td,
+body.theme-dark .markdown-preview-view th,
+body.theme-dark .cm-preview td,
+body.theme-dark .cm-preview th,
+body.theme-dark .markdown-source-view.mod-cm6 td,
+body.theme-dark .markdown-source-view.mod-cm6 th {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Sin hover molesto */
+body.theme-dark .markdown-preview-view tr:hover,
+body.theme-dark .cm-preview tr:hover,
+body.theme-dark .markdown-source-view.mod-cm6 tr:hover {
+  background-color: inherit !important;
+}

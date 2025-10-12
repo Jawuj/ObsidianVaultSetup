@@ -1,0 +1,54 @@
+/* 🌿 Callout personalizado para [!quote] estilo blanco y negro */
+.callout[data-callout="quote"] {
+  --callout-color: 255, 255, 255;
+  --callout-icon: lucide-feather;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.75rem;
+  padding: 1rem 1.2rem;
+  font-style: italic;
+  font-size: 1rem;
+  color: #ffffff !important; /* texto blanco forzado */
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Forzar blanco en todos los elementos hijos */
+.callout[data-callout="quote"] * {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* Título del callout */
+.callout[data-callout="quote"] .callout-title {
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.2px;
+  text-transform: none;
+}
+
+/* === Glow y color especial para texto entre comillas === */
+.markdown-preview-view :not(pre):not(code) {
+  --quote-highlight-color: #ffffff;
+  --quote-glow: 0 0 6px #ffffff; 
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+  --quote-highlight-color: #ffffff;
+  --quote-glow: 0 0 6px #ffffff;
+}
+
+.markdown-preview-view :not(pre):not(code):has(> .quoted-word),
+.markdown-source-view.mod-cm6 .cm-line span.cm-string {
+  text-shadow: var(--quote-glow);
+  color: var(--quote-highlight-color) !important;
+  font-style: italic;
+}
+
+span.quoted-word {
+  color: var(--quote-highlight-color) !important;
+  text-shadow: var(--quote-glow);
+  font-style: italic;
+}
