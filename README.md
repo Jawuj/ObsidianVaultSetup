@@ -6,7 +6,7 @@ Here’s everything I used: files, tweaks, and more.
 You’re welcome :p
 
 
-Used in Sepia-Brown Theme.
+Used in Sepia-Brown Theme and Black Theme.
 
 -  **Theme:** Primary By Cecilia May
 - @elevict. [Github](https://github.com/Elevict/Elevict-Snippets/tree/main) and [Homepage](https://discord.com/channels/686053708261228577/1320553700212605030)
@@ -17,6 +17,11 @@ Used in Sepia-Brown Theme.
 - [File Explorer Labels](https://github.com/t-if/gastrodon/blob/main/snippets/favorites/File%20Explorer%20Labels.css) 
 - [File Explorer Dividers](https://github.com/ElsaTam/Obsidian-Stuff/blob/main/snippets/file-explorer-separators/file-explorer-separators.css)
 
+# Sepia and Brown.
+
+![SepiaDashboard](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./refs/heads/main/Vault%20Images/SepiaDashboard.png)
+![SepiaDashboardGif](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./refs/heads/main/Vault%20Images/SepiaDashboardGif.gif)
+![SepiaDailynote](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./refs/heads/main/Vault%20Images/SepiaDailyNote.png)
 
 # Plugins I Use.
 
