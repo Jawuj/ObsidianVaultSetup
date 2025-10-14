@@ -1,0 +1,199 @@
+/* === ICONOS OCULTOS EN LOS CALLOUTS DE GRADIENTE === */
+.callout[data-callout^="gradient_"] .callout-title .callout-icon {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin-right: 0 !important;
+  visibility: hidden !important;
+}
+
+/* === MODO OSCURO === */
+body.theme-dark .callout[data-callout^="gradient_"] {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 0.5rem;
+  box-shadow: 0 2px 4px rgba(20, 15, 10, 0.2);
+  font-family: var(--font-text);
+  overflow: hidden;
+  min-height: 60px; 
+  box-sizing: border-box;
+  max-width: 100%;
+  opacity: 1;
+  transition: opacity 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+body.theme-dark .callout[data-callout^="gradient_"]:hover {
+  transform: scale(0.9);
+  box-shadow: 0 3px 10px rgba(40, 30, 20, 0.3);
+  z-index: 2;
+  position: relative;
+  opacity: 1;
+}
+
+body.theme-dark .callout[data-callout^="gradient_"]:hover ~ .callout[data-callout^="gradient_"],
+body.theme-dark .callout[data-callout^="gradient_"]:has(~ .callout[data-callout^="gradient_"]:hover) {
+  opacity: 0.4;
+}
+
+/* === LIMPIEZA DE BACKGROUNDS INTERNOS === */
+body.theme-dark .callout[data-callout^="gradient_"] *,
+.callout[data-callout^="gradient_"] .callout-content,
+.callout[data-callout^="gradient_"] .callout-title {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* === TITULOS === */
+body.theme-dark .callout[data-callout^="gradient_"] .callout-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+
+body.theme-dark .callout[data-callout^="gradient_"] .callout-title-icon {
+  display: none !important;
+}
+
+/* === CONTENIDO === */
+body.theme-dark .callout[data-callout^="gradient_"] .callout-content {
+  color: var(--text-normal);
+  font-size: 0.88rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+body.theme-dark .callout[data-callout^="gradient_"] p,
+body.theme-dark .callout[data-callout^="gradient_"] li {
+  text-align: justify;
+}
+
+/* === EFECTO EN IMAGENES (BASE) === */
+body.theme-dark .callout[data-callout^="gradient_"] img,
+body.theme-dark .callout[data-callout^="gradient_"] svg {
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  max-height: 60px;
+  opacity: 0.9;
+  border-radius: 6px;
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1);
+  transition: filter 0.4s ease-in-out;
+}
+
+/* === GLOW PERSONALIZADO POR THEME === */
+body.white-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 3px #ffffff);
+}
+
+body.rainbow-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 1px #ff4da6)
+          drop-shadow(0 0 2px #7f00ff)
+          drop-shadow(0 0 3px #00bfff);
+}
+
+body.blue-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 3px #66d9ff);
+}
+
+body.pink-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 3px #ff99dd);
+}
+
+body.purple-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 3px #cc99ff);
+}
+
+body.yellow-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 3px #fff700);
+}
+
+body.green-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 3px #00ff15);
+}
+
+body.aqua-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 3px #66ffe6);
+}
+
+body.red-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 3px #ff9999);
+}
+
+body.orange-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 3px #ffcc66);
+}
+
+body.brown-glow-general .callout[data-callout^="gradient_"] img {
+  filter: invert(1) sepia(0.8) saturate(1.6) hue-rotate(330deg) brightness(1.1)
+          drop-shadow(0 0 3px #cd853f);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === ESPACIADO ENTRE TITULO E IMAGEN === */
+body.theme-dark .callout[data-callout^="gradient_"] .callout-title {
+  margin-bottom: 0.6rem !important;
+}
+
+body.theme-dark .callout[data-callout^="gradient_"] img,
+body.theme-dark .callout[data-callout^="gradient_"] svg {
+  margin-top: 0.3rem !important;
+}
+
+
+/* Centered in the multi-column callout */
+.callout[data-callout="multi-column"] .callout-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  padding: 0.5rem 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.markdown-preview-view.centerh2 h2,
+.markdown-source-view.mod-cm6.centerh2 h2 {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
