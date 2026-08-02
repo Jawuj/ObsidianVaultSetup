@@ -1,7 +1,11 @@
-# Obsidian-Vault-Setup.
+> **[Archive] - My current setup is more minimal, black and white (Amoled) - August 2 2026**
+> 
+> Feel free to ask anything at my discord : sinaguaesrutayerma
+
+
 
 # Hi.
-Looks like you were a bit interested in my setup — that makes me happy.
+Looks like you were a bit interested in my setup.
 Here’s everything I used: files, tweaks, and more.
 You’re welcome :p
 
