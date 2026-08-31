@@ -1,0 +1,246 @@
+/*
+ * Rainbow Sidebar - Obsidian CSS Snippet
+ * Converted from the Rainbow-Colored Sidebar plugin
+ */
+
+:root {
+    /* Color Schemes - Uncomment ONLY ONE set of colors below */
+
+    /* [DEFAULT] csDefault */
+/*     --rcs-color-1: #7dcf02;
+    --rcs-color-2: #00c851;
+    --rcs-color-3: #00bc7c;
+    --rcs-color-4: #00bba7;
+    --rcs-color-5: #00b8db;
+    --rcs-color-6: #00a6f5;
+    --rcs-color-7: #2a7fff;
+    --rcs-color-8: #615fff;
+    --rcs-color-9: #ad46ff;
+    --rcs-color-10: #e12afb;
+    --rcs-color-11: #f6329b;
+    --rcs-color-12: #ff2056;
+    --rcs-color-13: #fa2b37;
+    --rcs-color-14: #ff6801;
+    --rcs-color-15: #fd9a02;
+    --rcs-color-16: #f0b102; */
+
+    --rcs-color-1: #FFFFFF; /* Blanco puro */
+    --rcs-color-2: #F2F2F2; /* Blanco roto */
+    --rcs-color-3: #E6E6E6;
+    --rcs-color-4: #D9D9D9;
+    --rcs-color-5: #CCCCCC; /* Gris claro */
+    --rcs-color-6: #BFBFBF;
+    --rcs-color-7: #B3B3B3;
+    --rcs-color-8: #999999; /* Gris medio */
+    --rcs-color-9: #808080;
+    --rcs-color-10: #666666; /* Gris oscuro editorial */
+    --rcs-color-11: #4D4D4D;
+    --rcs-color-12: #404040;
+    --rcs-color-13: #333333; /* Gris profundo */
+    --rcs-color-14: #262626;
+    --rcs-color-15: #1A1A1A; /* Casi fondo */
+    --rcs-color-16: #0D0D0D; /* Apenas visible sobre el negro */
+
+    /* csRed (Uncomment to use)
+    /*
+    --rcs-color-1: #ff2056; --rcs-color-2: #fa2b37; --rcs-color-3: #ff6801; --rcs-color-4: #fd9a02;
+    --rcs-color-5: #f0b102; --rcs-color-6: #7dcf02; --rcs-color-7: #00c851; --rcs-color-8: #00bc7c;
+    --rcs-color-9: #00bba7; --rcs-color-10: #00b8db; --rcs-color-11: #00a6f5; --rcs-color-12: #2a7fff;
+    --rcs-color-13: #615fff; --rcs-color-14: #ad46ff; --rcs-color-15: #e12afb; --rcs-color-16: #f6329b;
+    */
+
+    /* csYellow (Uncomment to use)
+    /*
+    --rcs-color-1: #fd9a02; --rcs-color-2: #f0b102; --rcs-color-3: #7dcf02; --rcs-color-4: #00c851;
+    --rcs-color-5: #00bc7c; --rcs-color-6: #00bba7; --rcs-color-7: #00b8db; --rcs-color-8: #00a6f5;
+    --rcs-color-9: #2a7fff; --rcs-color-10: #615fff; --rcs-color-11: #ad46ff; --rcs-color-12: #e12afb;
+    --rcs-color-13: #f6329b; --rcs-color-14: #ff2056; --rcs-color-15: #fa2b37; --rcs-color-16: #ff6801;
+    */
+
+    /* csPurple (Uncomment to use)
+    /*
+    --rcs-color-1: #ad46ff; --rcs-color-2: #e12afb; --rcs-color-3: #f6329b; --rcs-color-4: #ff2056;
+    --rcs-color-5: #fa2b37; --rcs-color-6: #ff6801; --rcs-color-7: #fd9a02; --rcs-color-8: #f0b102;
+    --rcs-color-9: #7dcf02; --rcs-color-10: #00c851; --rcs-color-11: #00bc7c; --rcs-color-12: #00bba7;
+    --rcs-color-13: #00b8db; --rcs-color-14: #00a6f5; --rcs-color-15: #2a7fff; --rcs-color-16: #615fff;
+    */
+
+    /* csBlue (Uncomment to use)
+    /*
+    --rcs-color-1: #00b8db; --rcs-color-2: #00a6f5; --rcs-color-3: #2a7fff; --rcs-color-4: #615fff;
+    --rcs-color-5: #ad46ff; --rcs-color-6: #e12afb; --rcs-color-7: #f6329b; --rcs-color-8: #ff2056;
+    --rcs-color-9: #fa2b37; --rcs-color-10: #ff6801; --rcs-color-11: #fd9a02; --rcs-color-12: #f0b102;
+    --rcs-color-13: #7dcf02; --rcs-color-14: #00c851; --rcs-color-15: #00bc7c; --rcs-color-16: #00bba7;
+    */
+
+    /* csMixed (Uncomment to use)
+    /*
+    --rcs-color-1: #00b8db; --rcs-color-2: #f6329b; --rcs-color-3: #7dcf02; --rcs-color-4: #fa2b37;
+    --rcs-color-5: #2a7fff; --rcs-color-6: #ad46ff; --rcs-color-7: #00a6f5; --rcs-color-8: #ff6801;
+    --rcs-color-9: #615fff; --rcs-color-10: #e12afb; --rcs-color-11: #00c851; --rcs-color-12: #fd9a02;
+    --rcs-color-13: #00bba7; --rcs-color-14: #ff2056; --rcs-color-15: #f0b102; --rcs-color-16: #00bc7c;
+    */
+
+    /* csBlueWave (Uncomment to use)
+    /*
+    --rcs-color-1: #00bc7c; --rcs-color-2: #00bba7; --rcs-color-3: #00b8db; --rcs-color-4: #00a6f5;
+    --rcs-color-5: #2a7fff; --rcs-color-6: #615fff; --rcs-color-7: #2a7fff; --rcs-color-8: #00a6f5;
+    --rcs-color-9: #00b8db; --rcs-color-10: #00bba7; --rcs-color-11: #00bc7c; --rcs-color-12: #00bba7;
+    --rcs-color-13: #00b8db; --rcs-color-14: #00a6f5; --rcs-color-15: #2a7fff; --rcs-color-16: #615fff;
+    */
+
+    /* csSummerVibes (Uncomment to use)
+    /*
+    --rcs-color-1: #ff2056; --rcs-color-2: #fa2b37; --rcs-color-3: #ff6801; --rcs-color-4: #fd9a02;
+    --rcs-color-5: #f0b102; --rcs-color-6: #fd9a02; --rcs-color-7: #ff6801; --rcs-color-8: #fa2b37;
+    --rcs-color-9: #ff2056; --rcs-color-10: #fa2b37; --rcs-color-11: #ff6801; --rcs-color-12: #fd9a02;
+    --rcs-color-13: #f0b102; --rcs-color-14: #fd9a02; --rcs-color-15: #ff6801; --rcs-color-16: #fa2b37;
+    */
+
+    /* csA11y (Uncomment to use)
+    /*
+    --rcs-color-1: #7dcf02; --rcs-color-2: #00bc7c; --rcs-color-3: #00b8db; --rcs-color-4: #2a7fff;
+    --rcs-color-5: #ad46ff; --rcs-color-6: #f6329b; --rcs-color-7: #fa2b37; --rcs-color-8: #fd9a02;
+    --rcs-color-9: #fa2b37; --rcs-color-10: #f6329b; --rcs-color-11: #ad46ff; --rcs-color-12: #2a7fff;
+    --rcs-color-13: #00b8db; --rcs-color-14: #00bc7c; --rcs-color-15: #7dcf02; --rcs-color-16: #00bc7c;
+    */
+
+    /* Shared Variables */
+    --rcs-highlight: #fff;
+    --rcs-shadow: #000;
+    --rcs-base-color-modifier: 100%;
+    --rcs-hover-color-modifier: 30%;
+    --rcs-border-focus-modifier: 40%;
+    --rcs-icon-color-modifier: 60%;
+    --rcs-indent-color-modifier: 20%;
+    --rcs-medium-contrast-modifier: 30%;
+    --rcs-bg-contrast-modifier: 20%;
+    --rcs-active-contrast-modifier: 10%;
+}
+
+.theme-light {
+    --rcs-contrast-color: var(--rcs-shadow);
+    --rcs-default-text-color: var(--rcs-shadow);
+}
+
+.theme-dark {
+    --rcs-contrast-color: var(--rcs-highlight);
+    --rcs-default-text-color: var(--rcs-highlight);
+    --rcs-base-color-modifier: 90%;
+    --rcs-bg-contrast-modifier: 30%;
+    --rcs-active-contrast-modifier: 20%;
+}
+
+/* 
+ * Rainbow Logic
+ * Targets only top-level folders in the sidebar.
+ * Note: If files are at the root level, they will count in the nth-child sequence.
+ */
+
+.nav-files-container>div>.nav-folder:nth-child(16n+1) {
+    --rcs-current-color: var(--rcs-color-1);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+2) {
+    --rcs-current-color: var(--rcs-color-2);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+3) {
+    --rcs-current-color: var(--rcs-color-3);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+4) {
+    --rcs-current-color: var(--rcs-color-4);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+5) {
+    --rcs-current-color: var(--rcs-color-5);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+6) {
+    --rcs-current-color: var(--rcs-color-6);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+7) {
+    --rcs-current-color: var(--rcs-color-7);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+8) {
+    --rcs-current-color: var(--rcs-color-8);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+9) {
+    --rcs-current-color: var(--rcs-color-9);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+10) {
+    --rcs-current-color: var(--rcs-color-10);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+11) {
+    --rcs-current-color: var(--rcs-color-11);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+12) {
+    --rcs-current-color: var(--rcs-color-12);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+13) {
+    --rcs-current-color: var(--rcs-color-13);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+14) {
+    --rcs-current-color: var(--rcs-color-14);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+15) {
+    --rcs-current-color: var(--rcs-color-15);
+}
+
+.nav-files-container>div>.nav-folder:nth-child(16n+16) {
+    --rcs-current-color: var(--rcs-color-16);
+}
+
+/* Apply styling using the color variable */
+
+.nav-files-container>div>.nav-folder .nav-folder-title {
+    color: color-mix(in srgb, var(--rcs-current-color) var(--rcs-base-color-modifier), var(--rcs-contrast-color));
+    --nav-item-color-hover: color-mix(in srgb, var(--rcs-current-color) var(--rcs-hover-color-modifier), var(--rcs-default-text-color));
+    --background-modifier-border-focus: color-mix(in srgb, var(--rcs-current-color) var(--rcs-border-focus-modifier), transparent);
+    --nav-collapse-icon-color: color-mix(in srgb, var(--rcs-current-color) var(--rcs-icon-color-modifier), transparent);
+}
+
+.nav-files-container>div>.nav-folder .tree-item-children {
+    --nav-indentation-guide-color: color-mix(in srgb, var(--rcs-current-color) var(--rcs-indent-color-modifier), transparent);
+}
+
+.nav-files-container>div>.nav-folder .tree-item-children .nav-file-title {
+    color: color-mix(in srgb, var(--rcs-current-color) var(--rcs-base-color-modifier), var(--rcs-default-text-color));
+    --nav-item-color-hover: color-mix(in srgb, var(--rcs-current-color) var(--rcs-hover-color-modifier), var(--rcs-default-text-color));
+    --background-modifier-border-focus: color-mix(in srgb, var(--rcs-current-color) var(--rcs-border-focus-modifier), transparent);
+    --nav-item-background-active: color-mix(in srgb, var(--rcs-current-color) var(--rcs-active-contrast-modifier), transparent);
+}
+
+.nav-files-container>div>.nav-folder .tree-item-children .nav-file-title.is-active {
+    color: color-mix(in srgb, var(--rcs-current-color) var(--rcs-active-contrast-modifier), var(--rcs-default-text-color));
+}
+
+/* Accessibility / High Contrast Options (Uncomment to enable)
+/*
+.theme-light {
+    --rcs-base-color-modifier: 80%;
+    --rcs-hover-color-modifier: 30%;
+    --rcs-bg-contrast-modifier: 30%;
+    --rcs-active-contrast-modifier: 20%;
+    --rcs-indent-color-modifier: 40%;
+    --rcs-icon-color-modifier: 80%;
+}
+.theme-dark {
+    --rcs-base-color-modifier: 70%;
+    --rcs-hover-color-modifier: 20%;
+    --rcs-bg-contrast-modifier: 40%;
+    --rcs-active-contrast-modifier: 30%;
+    --rcs-indent-color-modifier: 40%;
+    --rcs-icon-color-modifier: 100%;
+}
+*/

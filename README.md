@@ -1,8 +1,11 @@
-> **[Archive] - My current setup is more minimal, black and white (Amoled) - August 2 2026**
+> [Archive] - My current setup is more minimalist, in black and white (AMOLED). Right now, I'm not using Dashboard or any of the snippets, just an “Universal MOC” and Home Tab Plugin - August 31, 2026
 > 
 > Feel free to ask anything at my discord : sinaguaesrutayerma
 
+<h1>Actual Setup</h1>
 
+| ![1star](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/1star.jpg) | ![2daily](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/2daily.jpg) | ![3dash](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/3dash.jpg) |
+| :---: | :---: | :---: |
 
 # Hi.
 Looks like you were a bit interested in my setup.

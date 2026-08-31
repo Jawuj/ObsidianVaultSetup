@@ -1,4 +1,3 @@
-/* === Dark Mode (Pure Black + White Glow) === */
 body.theme-dark .mb-button.sepia-glow > button {
   background: linear-gradient(135deg, #000000 0%, #111111 100%) !important;
   color: #FFFFFF !important;
@@ -20,7 +19,6 @@ body.theme-dark .mb-button.sepia-glow > button:hover {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* Horizontal button bar */
 .sepia-button-row {
   display: flex;
   gap: 1rem;
@@ -33,7 +31,6 @@ body.theme-dark .mb-button.sepia-glow > button:hover {
   margin: 0 !important;
 }
 
-/* Centered in the multi-column callout */
 .callout[data-callout="multi-column"] .callout-content {
   display: flex;
   flex-wrap: wrap;
@@ -46,7 +43,6 @@ body.theme-dark .mb-button.sepia-glow > button:hover {
   margin: 0 auto;
 }
 
-/* Centrado h2 con glow blanco */
 .markdown-preview-view.centerh2 h2,
 .markdown-source-view.mod-cm6.centerh2 h2 {
   text-align: center;

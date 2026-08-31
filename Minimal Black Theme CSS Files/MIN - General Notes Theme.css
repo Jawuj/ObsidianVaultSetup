@@ -1,21 +1,4 @@
-  /* =========================================================
-    ✦ Tema Morado Glow ✦
-    ========================================================= */
 
-
-  /* ================================
-    ✦ H1 Destacado Sticky ✦
-    ================================ */
-
-  /* ================================
-    ✦ H1 & H2 Sticky Destacados ✦
-    ================================ */
-  /* ================================
-    ✦ H1–H6 Sticky Destacados ✦
-    ================================ */
-
-
-/* PREVIEW */
 .markdown-preview-view h1 {
   position: sticky;
   top: 0;
@@ -140,7 +123,6 @@
   
 
     
-  /* --- Negrita --- */
   .markdown-source-view.mod-cm6 .cm-strong,
   .markdown-preview-view strong {
     color: #ffffff !important; /* Morado claro */
@@ -148,7 +130,6 @@
     text-shadow: 0 0 6px rgba(178, 178, 178, 0.8);
   }
 
-  /* --- Cursiva --- */
   .markdown-source-view.mod-cm6 .cm-em,
   .markdown-preview-view em {
     color: #ffffff !important; /* Morado medio */
@@ -156,7 +137,6 @@
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
   }
 
-  /* --- Negrita + Cursiva --- */
   .markdown-source-view.mod-cm6 .cm-strong.cm-em,
   .markdown-preview-view strong em {
     color: #9d9d9d !important; /* Morado intenso */
@@ -165,7 +145,6 @@
     text-shadow: 0 0 8px rgba(126, 126, 126, 0.9);
   }
 
-  /* --- Texto resaltado (== highlight ==) --- */
   .markdown-source-view.mod-cm6 .cm-highlight,
   .markdown-preview-view mark {
     background-color: rgba(178, 167, 188, 0.25) !important; /* Morado suave */
@@ -174,7 +153,6 @@
     padding: 0 2px;
   }
 
-  /* --- Código en línea (`code`) --- */
   .markdown-source-view.mod-cm6 .cm-inline-code,
   .markdown-preview-view code {
     background-color: rgba(95, 95, 95, 0.15) !important;
@@ -210,27 +188,6 @@
 .markdown-preview-view h5 { color: #888888 !important; text-shadow: 0 0 8px rgba(255,255,255,0.5); font-weight: 700; }
 .markdown-preview-view h6 { color: #666666 !important; text-shadow: 0 0 8px rgba(255,255,255,0.4); font-weight: 700; }
 
-
-
-
-
-
-  /* ================================
-    ✦ Callouts ✦
-    ================================ */
-
-  .callout[data-callout="quote"] {
-    border: 1px solid #f4edff;
-    border-radius: 0.75rem;
-    padding: 1rem 1.2rem;
-    font-style: italic;
-    box-shadow: 0 0 10px rgba(147, 147, 148, 0.6);
-  }
-
-  .callout[data-callout="quote"] .callout-title {
-    color: #d0a2ff;
-    text-shadow: 0 0 6px rgba(146, 142, 149, 0.7);
-  }
 
 
   /* ================================

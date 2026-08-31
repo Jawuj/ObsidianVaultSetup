@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------------------
-   Daily Note Themes — Sepia auto-adaptation by CyanVoxel
-   Sepia palette for each weekday, adapted to light and dark modes
+   Daily Note Theme — Sepia auto-adaptation by CyanVoxel
+   Paleta sepia única, adaptada a modo claro y oscuro
 ------------------------------------------------------------------------------*/
 
-/* === Base variables for each mode === */
+/* === Variables base por modo === */
 body.theme-light {
   --highlight: #2c2c2c;
   --primary: #a5855f;
@@ -16,44 +16,7 @@ body.theme-dark {
   --dark: #26211c;
 }
 
-/* === Weekday tones === */
-body.theme-light.sunday,
-body.theme-light .Sunday {
-  --primary: #d7a79d;
-  --dark: #f9ede7;
-}
-body.theme-light.monday,
-body.theme-light .Monday {
-  --primary: #c79d85;
-  --dark: #f8efe7;
-}
-body.theme-light.tuesday,
-body.theme-light .Tuesday {
-  --primary: #b89c72;
-  --dark: #f7f2e1;
-}
-body.theme-light.wednesday,
-body.theme-light .Wednesday {
-  --primary: #dac181;
-  --dark: #fef7e1;
-}
-body.theme-light.thursday,
-body.theme-light .Thursday {
-  --primary: #ddb496;
-  --dark: #fef1e4;
-}
-body.theme-light.friday,
-body.theme-light .Friday {
-  --primary: #b5a573;
-  --dark: #f7f4de;
-}
-body.theme-light.saturday,
-body.theme-light .Saturday {
-  --primary: #d7a38f;
-  --dark: #faeee2;
-}
-
-/* === General daily styling === */
+/* === Estilo general de la daily === */
 .daily {
   color: var(--highlight);
   --text-normal: var(--highlight);
@@ -81,7 +44,7 @@ body.theme-light .Saturday {
   --pill-cover-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
 }
 
-/* === Headings and text === */
+/* === Encabezados y texto === */
 .daily :is(h1, .HyperMD-header.HyperMD-header-1) {
   color: var(--primary);
   text-align: center;
@@ -141,13 +104,6 @@ body.theme-light .Saturday {
   margin-right: auto !important;
 }
 
-:is(.sunday, .Sunday,
-.monday, .Monday,
-.tuesday, .Tuesday,
-.wednesday, .Wednesday,
-.thursday, .Thursday,
-.friday, .Friday,
-.saturday, .Saturday
-) svg {
+.daily svg {
   color: color-mix(in srgb, var(--highlight) 60%, transparent);
 }

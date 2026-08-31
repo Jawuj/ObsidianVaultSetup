@@ -10,6 +10,9 @@ banner-radius: 0
 cssclasses:
   - centerh2
   - homepage
+  - wide-page
+Created: 2026-08-29T23:31:39
+Modified: 2026-08-31T13:07:36
 ---
 ---
 > [!multi-column]
@@ -101,42 +104,6 @@ tab: Recent Files.
 	sort file.mtime desc
 	limit 5
 
-tab: Stats.
-
-
-```dataviewjs
-let poems = dv.pages("#Poem").array();
-let ideas = dv.pages("#Escritura/Idea").array();
-
-let lastPoem = poems.sort((a,b) => b.file.ctime - a.file.ctime)[0];
-let totalPoems = poems.length;
-let totalIdeas = ideas.length;
-
-let writingDays = new Set(poems.map(p => p.file.ctime.toFormat("yyyy-MM-dd")));
-let lastPoemText = lastPoem ? `[[${lastPoem.file.name}]]` : "N/A";
-
-let exclude = ["poem", "#poem", "notfinished", "#notfinished", "poem/notfinished", "#poem/notfinished", "finished", "#finished"];
-let tagCounts = {};
-
-for (let p of poems) {
-  if (!p.tags) continue;
-  for (let tag of p.tags) {
-    let cleanTag = tag.toLowerCase().replace(/^#/, "");
-    if (exclude.includes(cleanTag)) continue;
-    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
-  }
-}
-
-let sortedTags = Object.entries(tagCounts).sort((a,b) => b[1]-a[1]);
-let topTag = sortedTags[0] ? `${sortedTags[0][0]} (${sortedTags[0][1]})` : "None";
-
-dv.paragraph(`
-- 📜 **Poems written:** ${totalPoems}
-- 💡 **Ideas captured:** ${totalIdeas}
-- 📅 **Writing days:** ${writingDays.size}
-- 🕓 **Last poem:** ${lastPoemText}
-- 🏷️ **Most used theme:** ${topTag}
-`);
 
 ```
 ---
@@ -188,87 +155,64 @@ dv.paragraph(`
 > 
 
 ---
+
 > [!multi-column]
 > 
-> > [!gradient_3_1] Tasks.
+> > [!cblock] Tasks.
 > >
 > > [![[TasksIcon.png]]](Tasks.md)
 > >
 > > Todo lo que tengo que hacer en mi día, universidad, relaciones, trabajos... Todo.
 > 
-> > [!gradient_3_1] University.
+> > [!cblock] University.
 > >
 > > [![[UniversityIcon.png]]](University.md)
 > >
 > > Terreno fértil para el pensamiento estructurado, la exploración personal y la construcción de conocimiento con propósito.
 > 
-> > [!gradient_3_1] Writing.
+> > [!cblock] Writing.
 > >
 > > [![[WritingIcon.png]]](Writing.md)
 > >
 > > La escritura como medio de expresión y transformación, herramienta para pensar, sentir y recordar.
 >
-> > [!gradient_3_1] Poetry.
+> > [!cblock] Poetry.
 > >
 > > [![[PoetryIcon.png]]](Poetry.md)
 > >
 > > Expresar situaciones, emociones y vivencias mediante palabras decoradas, suavizadas o perforantes.
 >
-> > [!gradient_3_1] Daily.
+> > [!cblock] Daily.
 > >
 > > [![[DailyIcon.png]]](Daily.md)
 > >
 > > Mi día a día escrito en notas independientes, reflejan lo que viví y cómo funciona mi cerebro.
 >
-> > [!gradient_4_1] Dreams.
+> > [!cblock] Dreams.
 > >
 > > [![[DreamIcon.png]]](Dreams.md)
 > >
 > > Simplemente sueños que tuve y escribí con un ojo cerrado. Lamentablemente algunos los olvido antes...
 >
-> > [!gradient_5_1] Me.
+> > [!cblock] Me.
 > >
 > > [![[MeIcon.png]]](Me..md)
 > >
 > > Yo, descrito en una nota más. Supongo que soy un poco egocéntrico como para tener una nota especialmente sobre mí.
 >
-> > [!gradient_6_1] Albums.
+> > [!cblock] Albums.
 > >
 > > [![[AlbumIcon.png]]](Albums.md)
 > >
 > > Colección organizada de canciones o piezas musicales publicadas juntas, usualmente con un concepto, estilo o narrativa en común.
 >
-> > [!gradient_7_1] Books.
+> > [!cblock] Books.
 > >
 > > [![[BookIcon.png]]](Books%20In%20Note.md)
 > >
 > > Obras escritas que recopilan ideas, historias o conocimientos, con un propósito literario, informativo o artístico.
 >
-> > [!gradient_8_1] ----------.
-> >
-> > [![[HeartIcon.png]]](Test.md)
-> >
-> > -----------------------------------------------------------------------.
->
-> > [!gradient_9_1] Zettel.
-> >
-> > [![[ZettelkastenIcon.png]]](z-20250713-Zettelkasten.md)
-> >
-> > Sistema para capturar, conectar y desarrollar ideas individuales. Significa Caja de notas.
->
-> > [!gradient_10_1] Zettelkasten.
-> >
-> > [![[ZettelkastenIcon.png]]](z-20250713-Zettelkasten.md)
-> >
-> > Sistema para capturar, conectar y desarrollar ideas individuales. Significa Caja de notas.
->
-> > [!gradient_11_1] Zettelkasten.
-> >
-> > [![[ZettelkastenIcon.png]]](z-20250713-Zettelkasten.md)
-> >
-> > Sistema para capturar, conectar y desarrollar ideas individuales. Significa Caja de notas.
->
-> > [!gradient_12_1] Zettelkasten.
+> > [!cblock] Zettel.
 > >
 > > [![[ZettelkastenIcon.png]]](z-20250713-Zettelkasten.md)
 > >
@@ -337,9 +281,9 @@ dv.paragraph(`
 ${statsStyles}
 <div class="sepia-stats">
   <h2>📊 Obsidian Stats</h2>
-  <p>🗓️ Has usado Obsidian por <strong>${daysSinceStart}</strong> días</p>
-  <p>📝 Tienes <strong>${totalNotes}</strong> notas</p>
-  <p>🏷️ Estás usando <strong>${totalTags}</strong> etiquetas únicas</p>
+  <p>🗓️ You've been using Obsidian for <strong>${daysSinceStart}</strong> days</p>
+  <p>📝 You have <strong>${totalNotes}</strong> notes</p>
+  <p>🏷️ You're using <strong>${totalTags}</strong> unique tags</p>
 </div>
 `);
 

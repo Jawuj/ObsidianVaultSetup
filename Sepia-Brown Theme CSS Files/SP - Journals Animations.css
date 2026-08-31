@@ -1,4 +1,5 @@
-/* 🗓️ Calendar days: dramatic hover without rotation */
+/* For Plugin Journals */
+
 .calendar-grid[data-v-063a3437] > *:hover {
   transform: scale(1.25);
   background-color: var(--color-accent);
@@ -8,7 +9,6 @@
   transition: all 0.2s cubic-bezier(0.25, 1.5, 0.5, 1.25);
 }
 
-/* 📍 Today's date: bounce effect */
 .calendar[data-v-063a3437] [data-today]:hover {
   animation: bounce-today 0.6s ease;
   background-color: var(--color-accent);
@@ -23,7 +23,6 @@
   100% { transform: scale(1.1); }
 }
 
-/* ✅ Selected day: zoom-glow effect without rotation */
 .calendar[data-v-063a3437] [data-selected]:hover {
   transform: scale(1.3);
   background-color: var(--background-secondary);
@@ -33,7 +32,6 @@
   transition: all 0.25s ease-in-out;
 }
 
-/* 📅 Calendar header: pulse effect */
 .calendar-header[data-v-063a3437] > *:hover {
   animation: pulse-header 0.5s ease forwards;
   color: var(--color-accent);
@@ -45,7 +43,6 @@
   100% { transform: scale(1.05); }
 }
 
-/* 🔘 Arrows: glow without rotation */
 button[data-v-ff188d28]:hover {
   transform: scale(1.25);
   color: var(--text-accent);
@@ -53,7 +50,6 @@ button[data-v-ff188d28]:hover {
   transition: transform 0.2s ease-in-out, color 0.2s;
 }
 
-/* ☁️ Icon buttons: soft bounce */
 .icon-button[data-v-3dd8502b]:hover {
   animation: icon-bounce 0.4s ease-in-out;
   background-color: var(--background-secondary-alt);
@@ -65,7 +61,6 @@ button[data-v-ff188d28]:hover {
   100% { transform: translateY(0); }
 }
 
-/* 🎯 Central blocks (day, month, year): animated hover without rotation */
 .nav-block[data-v-3fb7392e]:hover,
 .nav-block-relative[data-v-3fb7392e]:hover {
   transform: scale(1.1);
@@ -73,7 +68,6 @@ button[data-v-ff188d28]:hover {
   color: var(--color-accent);
 }
 
-/* 🎯 Text elements inside the block: text glow animation */
 .nav-block[data-v-3fb7392e]:hover * {
   color: var(--color-accent);
   text-shadow: 0 0 6px var(--color-accent);
