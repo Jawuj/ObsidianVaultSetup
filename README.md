@@ -4,7 +4,7 @@
 
 <h1>Actual Setup</h1>
 
-| ![1star](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/1star.jpg) | ![2daily](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/2daily.jpg) | ![3dash](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/3dash.jpg) |
+| ![1star](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/1start.jpg) | ![2daily](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/2daily.jpg) | ![3dash](https://raw.githubusercontent.com/Jawuj/Obsidian-Vault-Setup./main/Vault%20Images/3dash.jpg) |
 | :---: | :---: | :---: |
 
 # Hi.
